@@ -3,5 +3,5 @@ https://segmentfault.com/a/1190000012084251
 
 调查发现ngx-echarts内部有正常使用runoutofangular来进行echarts的调用  
 有可能是因为echarts实例过多引起的卡顿  
-在项目中使用了30个echarts的实例  
-但是echarts在实例页面卸载以后仍然在调用也还是事实  
+
+在绑定window上的resize后并没有在页面卸载后解除绑定,因此导致后台长期贮存,原因可能是angular的包装插件也可能是echarts本身就如此
