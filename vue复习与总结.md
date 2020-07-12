@@ -29,6 +29,7 @@
   1.v-else与v-else-if必须跟在v-if或者v-else的后面,否则无法识别  
   2.key管理可复用元素,有相同父元素的子元素必须有独特的key,除非子元素设计为重复使用  
   [官方文档](https://cn.vuejs.org/v2/api/#key)  
+  [具体解释](https://www.jianshu.com/p/4bd5e745ce95)  
   [深度参考]()  
   **注意:不要使用数组的index作为key**  
   3.v-if与v-show的渲染机制不同,v-show用于频繁切换,v-if为惰性的,类似于计算属性
