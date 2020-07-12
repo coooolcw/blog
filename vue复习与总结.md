@@ -27,7 +27,9 @@
 三.条件渲染  
 ===
   1.v-else与v-else-if必须跟在v-if或者v-else的后面,否则无法识别  
-  2.key管理可复用元素,有相同父元素的子元素必须有独特的key[参考](https://www.zhihu.com/question/61064119/answer/766607894)  
+  2.key管理可复用元素,有相同父元素的子元素必须有独特的key,除非子元素设计为重复使用  
+  [官方文档](https://cn.vuejs.org/v2/api/#key)  
+  [深度参考]()  
   3.v-if与v-show的渲染机制不同,v-show用于频繁切换,v-if为惰性的,类似于计算属性
   
   
