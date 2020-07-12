@@ -31,8 +31,10 @@
   key的特殊attribute主要用在Vue的虚拟DOM算法,在新旧nodes对比时辨识VNodes  
   [官方文档](https://cn.vuejs.org/v2/api/#key)  
   [具体解释](https://www.jianshu.com/p/4bd5e745ce95)  
-  [深度参考]()  
+  [深度参考1](https://github.com/sl1673495/blogs/issues/39)  
+  [深度参考2-diff](https://juejin.im/post/5e7c680451882535e2042bc9)  
   **注意:不要使用数组的index作为key**  
+  同时不要使用随机数作为key  
   3.v-if与v-show的渲染机制不同,v-show用于频繁切换,v-if为惰性的,类似于计算属性
   
   
