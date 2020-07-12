@@ -27,6 +27,7 @@
 三.条件渲染  
 ===
   1.v-else与v-else-if必须跟在v-if或者v-else的后面,否则无法识别  
-  2.key管理可复用元素,原则上不需要复用的都要添加,同时也可以增加某些时候渲染的效率[参考](https://www.jianshu.com/p/0044532e4a93)  
+  2.key管理可复用元素,有相同父元素的子元素必须有独特的key[参考](https://www.zhihu.com/question/61064119/answer/766607894)  
+  3.v-if与v-show的渲染机制不同,v-show用于频繁切换,v-if为惰性的,类似于计算属性
   
   
