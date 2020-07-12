@@ -15,6 +15,9 @@
   1.有异步时使用watch,computed不支持异步  
   2.多个数据影响一个数据用computed,一个数据改变影响多个数据使用watch  
   3.内部逻辑复杂操作多的使用watch  
+  4.computed在初始化时会执行一次,watch不会  
+  5.watch还有其他参数可供选择,包括deep,immediate,同时可以传入数组,[详情](https://cn.vuejs.org/v2/api/#watch)  
+  
     
   
   
