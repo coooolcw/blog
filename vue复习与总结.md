@@ -17,7 +17,11 @@
   3.内部逻辑复杂操作多的使用watch  
   4.computed在初始化时会执行一次,watch不会  
   5.watch还有其他参数可供选择,包括deep,immediate,同时可以传入数组,[详情](https://cn.vuejs.org/v2/api/#watch)  
-
+  
+二.Class 与 Style 绑定  
+===  
+  实际业务开发中,除了使用UI组件库时,不常使用style系语法,主要关注class语法  
+  
   
   
   
