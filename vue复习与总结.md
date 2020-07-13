@@ -32,7 +32,27 @@
   
 四.列表渲染
 ===
-  注意数组可以被监听的方法有限,
+  一.数组中推荐使用for of,而不是for in  
+  ---  
+  二.数据的监听  
+  ---  
+    1.数组可以被监听的方法有限,只能使用
+    2.
+  三.对象的监听  
+  ---  
+    1.对象使用for in  
+    2.在遍历对象时，会按Object.keys()的结果遍历,但是顺序不能保证
+    
+  二.template的作用
+  ---
+  可以包裹元素,但是不会被渲染在页面上  
+  常用于包裹多个同数组循环  
+  ```Vue.js
+  <template v-for="(item, index) of list" :key="item.id">
+    <div>{{item.something}}</div>
+    <div>{{item.otherthing}}</div>
+  </template>  
+  ```
 
 五.key  
 ===
@@ -45,14 +65,6 @@
   [深度参考2-diff](https://juejin.im/post/5e7c680451882535e2042bc9)  
   **注意:不要使用数组的index作为key**  
   **不要使用随机数作为key**  
+  **不要使用对象或数组之类的非基本类型值作为v-for的key,用字符串或数值类型的值.**
 
-六.template的作用
-===
-可以包裹元素,但是不会被渲染在页面上  
-常用于包裹多个同数组循环  
-```Vue.js
-<template v-for="(item, index) of list" :key="item">
-  <div>{{item.something}}</div>
-  <div>{{item.otherthing}}</div>
-</template>  
-```
+
