@@ -45,3 +45,13 @@
   [深度参考2-diff](https://juejin.im/post/5e7c680451882535e2042bc9)  
   **注意:不要使用数组的index作为key**  
   **不要使用随机数作为key**  
+
+六.template的作用
+===
+可以包裹元素,但是不会被渲染在页面上  
+常用于包裹多个同数组循环  
+```javascript
+<template v-for="(item, index) of list" :key="item">
+  <div>{{item.something}}</div>
+  <div>{{item.otherthing}}</div>
+</template>  
