@@ -85,3 +85,21 @@
   **不要使用对象或数组之类的非基本类型值作为v-for的key,用字符串或数值类型的值.**
 
 
+
+N.组件相关
+===
+  一.在ul>li之类的嵌套元素中,使用子组件需要这样
+  ```Vue.js
+  <ul>
+    <li
+      is="todo-item"
+      v-for="(todo, index) in todos"
+      v-bind:key="todo.id"
+      v-bind:title="todo.title"
+    ></li>
+  </ul>
+  ```
+  这样做实现的效果与<todo-item>相同,但是可以避开一些潜在的浏览器解析错误.
+  [参考](https://cn.vuejs.org/v2/guide/components.html#%E8%A7%A3%E6%9E%90-DOM-%E6%A8%A1%E6%9D%BF%E6%97%B6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)  
+  
+
