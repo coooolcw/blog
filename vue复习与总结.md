@@ -32,12 +32,13 @@
   
 四.列表渲染  
 ===  
-
+  
 
 
 五.key  
 ===
   key管理可复用元素,有相同父元素的子元素必须有独特的key,除非子元素设计为重复使用  
+  建议尽可能在使用v-for时提供key attribute,除非遍历输出的DOM内容非常简单,或者是刻意依赖默认行为以获取性能上的提升.  
   key的特殊attribute主要用在Vue的虚拟DOM算法,在新旧nodes对比时辨识VNodes  
   [官方文档](https://cn.vuejs.org/v2/api/#key)  
   [具体解释](https://www.jianshu.com/p/4bd5e745ce95)  
