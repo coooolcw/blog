@@ -103,3 +103,5 @@ N.组件相关
   [参考](https://cn.vuejs.org/v2/guide/components.html#%E8%A7%A3%E6%9E%90-DOM-%E6%A8%A1%E6%9D%BF%E6%97%B6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)  
   
 
+
+  N+1.element-ui更新频率大幅度降低,并没有随着vue3.0的发布而有起色,可以预见将会和mintui一样消逝
