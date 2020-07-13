@@ -40,4 +40,4 @@
   [深度参考1](https://github.com/sl1673495/blogs/issues/39)  
   [深度参考2-diff](https://juejin.im/post/5e7c680451882535e2042bc9)  
   **注意:不要使用数组的index作为key**  
-  同时不要使用随机数作为key  
+  **不要使用随机数作为key**  
