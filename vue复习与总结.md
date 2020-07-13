@@ -88,7 +88,7 @@
 
 N.组件相关
 ===
-  一.在ul>li之类的嵌套元素中,使用子组件需要这样
+  一.在ul>li,table>tr,select>option之类的嵌套元素组合中,使用子组件需要这样
   ```Vue.js
   <ul>
     <li
