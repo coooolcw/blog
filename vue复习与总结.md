@@ -50,7 +50,7 @@
 ===
 可以包裹元素,但是不会被渲染在页面上  
 常用于包裹多个同数组循环  
-```javascript
+```Vue.js
 <template v-for="(item, index) of list" :key="item">
   <div>{{item.something}}</div>
   <div>{{item.otherthing}}</div>
