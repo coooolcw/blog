@@ -12,4 +12,16 @@
 1.创建项目时选择eslint+prettier  
 2.设置vscode插件vuter中的各项为prettier  
 3.创建.prettierrc.js并且配置,[这里参考地址](https://prettier.io/docs/en/configuration.html)  
-
+  
+建议配置为:  
+```js
+module.exports = {
+  trailingComma: "es5",
+  semi: true,
+  arrowParens: "always",
+};
+```
+trailingComma为最后的逗号,  
+semi为分号,  
+arrowParens为箭头函数总是包含括号  
+这是根据prettier的默认配置来覆盖vue-cli默认创建的配置  
