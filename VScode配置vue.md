@@ -18,4 +18,4 @@ extends: [
 ]
 ```
 在extends的最后  
-但是无法解决vuter在vue文件中js部分的冲突,正在研究  
+无法解决
