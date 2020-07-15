@@ -4,18 +4,4 @@
 [参考](https://www.imooc.com/wenda/detail/409298)  
 [参考](https://segmentfault.com/q/1010000015852118)  
 2.vscode的eslint用于将项目内安装的eslint配置提示或格式化到ide  
-
-vue-cli4有问题,正在研究
-1.eslint-config-prettier 是最新的解决eslint与prettier冲突的组件  
-```shell
-npm install --save-dev eslint-config-prettier
-```
-安装后需要在.eslintlrc.js中添加
-```
-extends: [
-"prettier",
-"prettier/vue"
-]
-```
-在extends的最后  
-无法解决
+**但是vue-cli4在创建项目时会不创建prettier配置文件而是直接创建eslint的配置文件,这会导致vscode的prettier插件无法读取到正确配置**  
