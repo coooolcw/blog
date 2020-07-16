@@ -58,3 +58,6 @@ TypeScript › Suggest: Paths
   "exclude": ["node_modules"]
 }
 ```
+同时,在插件设置里设置  
+Extension On Import勾上,也就是`"path-intellisense.extensionOnImport": true,`  
+这样除了在<script>中引入组件时没有文件扩展名以外其他地方都有文件扩展名
