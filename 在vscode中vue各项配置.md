@@ -62,3 +62,27 @@ TypeScript › Suggest: Paths
 Extension On Import勾上,也就是`"path-intellisense.extensionOnImport": true,`  
 这样就可以使用@作为快捷引入使用,还可以自行另行添加(注意webpack也要添加)  
 除了在<script>中引入组件时没有文件扩展名以外其他地方都有文件扩展名  
+
+三.配置其他路径别名(快捷路径)
+===
+在vue.config.js中添加  
+```js
+const path = require('path')
+
+function resolve(dir) {
+    return path.join(__dirname, dir)
+}
+```
+以及在module.exports中添加
+```js
+chainWebpack: (config) => {
+        config.resolve.alias
+            .set('@$', resolve('src'))
+            .set('base', resolve('src/base'))
+            .set('views',resolve('src/views'))
+            .set('common', resolve('src/common'))
+            .set('components', resolve('src/components'))
+    }
+```
+就可以使用了
+再配合二中的操作,在path内添加相应代码就可以自动补全
