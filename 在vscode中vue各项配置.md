@@ -1,4 +1,5 @@
-一.目标:prettier,eslint,vuter同时运行  
+一.prettier,eslint,vuter同时运行  
+===
   
 整体结构:  
 1.npm安装的eslint与prettier在本地提供shell以及保存运行  
@@ -27,6 +28,8 @@ arrowParens为箭头函数总是包含括号
 这是根据prettier的默认配置来覆盖vue-cli默认创建的配置  
   
 二.路径自动补全和提示  
+===
+  
 1.关闭vscode中的默认提示,不太好用  
 在设置中的
 ```
