@@ -84,5 +84,6 @@ chainWebpack: (config) => {
             .set('components', resolve('src/components'))
     }
 ```
-就可以使用了
-再配合二中的操作,在path内添加相应代码就可以自动补全
+其中,默认的@最好不要修改,其他都是根据情况自行选择  
+保存就可以使用了    
+再配合二的操作,在path内添加相应代码就可以自动补全  
