@@ -38,3 +38,20 @@ JavaScript › Suggest: Paths
 TypeScript › Suggest: Paths
 在 import 语句和 require 调用中，启用或禁用路径建议。
 ```
+安装vscode插件Path Intellisense  
+安装说明中就有关闭vs原生补全的说明  
+然后在项目根目录创建jsconfig.json  
+内部输入  
+```json
+{
+  "allowJs": true,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
