@@ -73,7 +73,7 @@ function resolve(dir) {
     return path.join(__dirname, dir)
 }
 ```
-以及在module.exports中添加
+以及在该文件的module.exports中添加
 ```js
 chainWebpack: (config) => {
         config.resolve.alias
