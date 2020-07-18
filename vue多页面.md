@@ -22,3 +22,5 @@ module.exports = {
   },
 };
 ```
+2.build打包以后在nginx中配置后可以正常使用,但是开发的devserver无法正常进行跳转  
+需要配置webpack  
