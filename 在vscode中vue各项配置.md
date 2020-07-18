@@ -51,7 +51,7 @@ TypeScript › Suggest: Paths
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-    //  此处添加其他快捷路径
+      // 此处添加其他快捷路径
       "@/*": ["./src/*"],
       "crop/*": ["src/pages/crop/*"],
       "windows/*": ["src/pages/windows/*"]
