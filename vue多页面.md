@@ -7,14 +7,17 @@ module.exports = {
     index: {
       entry: "src/pages/index/entry.js",
       title: "目录",
+      template: "src/pages/index/index.html",
     },
     windows: {
       entry: "src/pages/windows/entry.js",
       title: "仿windows",
+      template: "src/pages/windows/windows.html",
     },
     corp: {
       entry: "src/pages/corp/entry.js",
       title: "nisuwa官方网站",
+      template: "src/pages/corp/corp.html",
     },
   },
 };
