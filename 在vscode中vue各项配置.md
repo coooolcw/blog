@@ -45,7 +45,7 @@ TypeScript › Suggest: Paths
 安装说明中就有关闭vs原生补全的说明  
 然后在项目根目录创建jsconfig.json  
 内部输入  
-```json
+```
 {
   "allowJs": true,
   "compilerOptions": {
