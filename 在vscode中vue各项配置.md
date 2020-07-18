@@ -53,8 +53,8 @@ TypeScript › Suggest: Paths
     "paths": {
       // 此处添加其他快捷路径
       "@/*": ["./src/*"],
-      "crop/*": ["src/pages/crop/*"],
-      "windows/*": ["src/pages/windows/*"]
+      "crop/*": ["./src/pages/crop/*"],
+      "windows/*": ["./src/pages/windows/*"]
     }
   },
   "include": ["src/**/*"],
