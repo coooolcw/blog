@@ -3,18 +3,19 @@
 ```js
 module.exports = {
   pages: {
+    // 多页面配置
     index: {
-      entry: "src/pages/index/indexMain.js",
+      entry: "src/pages/index/entry.js",
       title: "目录",
     },
     windows: {
-      entry: "src/pages/windows/windowsMain.js",
+      entry: "src/pages/windows/entry.js",
       title: "仿windows",
     },
-    nisuwa: {
-      entry: "src/pages/nisuwa/nisuwaMain.js",
+    corp: {
+      entry: "src/pages/corp/entry.js",
       title: "nisuwa官方网站",
     },
-  }
+  },
 };
 ```
