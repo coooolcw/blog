@@ -22,4 +22,11 @@ module.exports = {
   },
 };
 ```
-2.build打包以后在nginx中配置后可以在服务器正常使用,但是webpack的devserver无法正常工作需要进行配置  
+2.跳转问题  
+在devserver中默认打开index.html,无法和线上一样通过域名跳转  
+可行的方法:  
+```HTML
+<a href="windows.html">link to windows page</a>
+<a href="corp.html">link to corp page</a>
+```
+这样可以直接跳转到html,同时不会被router影响
