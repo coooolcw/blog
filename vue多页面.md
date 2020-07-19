@@ -29,4 +29,5 @@ module.exports = {
 <a href="windows.html">link to windows page</a>
 <a href="corp.html">link to corp page</a>
 ```
-这样可以直接跳转到html,同时不会被router影响
+这样可以直接跳转到html,同时不会被router影响  
+但是无法在线上跳转域名,需要进一步修改  
