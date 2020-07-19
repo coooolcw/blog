@@ -23,11 +23,14 @@ module.exports = {
 };
 ```
 2.跳转问题  
-在devserver中默认打开index.html,无法和线上一样通过域名跳转  
+devserver.  
+默认打开index.html,无法和线上一样通过域名跳转  
 可行的方法:  
 ```HTML
 <a href="windows.html">link to windows page</a>
 <a href="corp.html">link to corp page</a>
 ```
 这样可以直接跳转到html,同时不会被router影响  
-但是无法在线上跳转域名,需要进一步修改  
+但是无法在线上跳转域名    
+nginx.  
+线上需要配置nginx跳转  
