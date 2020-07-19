@@ -26,15 +26,17 @@ module.exports = {
 可以留作以后的实验空间  
 二.跳转问题  
 1.devserver.  
-vue-cli使用的webpack中的devserver默认打开index.html,无法和线上一样通过域名跳转,并且无法多端口代理多文件  
+vue-cli使用的webpack中的devserver默认打开index.html,  
+无法和线上一样通过域名跳转,并且无法多端口代理多文件  
 (可以使用多个express另外开启但是这样无法在cli中使用各种vue的服务)  
 因此hack的方法:  
 ```HTML
 <a href="windows.html">link to windows page</a>
 <a href="corp.html">link to corp page</a>
 ```
-这样可以直接跳转到html,同时不会影响单个spa的route,点击任意router-link就会变成正常的localhost地址    
-但是这种方法部署到线上以后,无法在线上跳转域名,无法正常使用,因此需要nginx进行域名跳转,将各个html页面跳转到子域名,在子域名下呈现单个spa.        
+这样可以直接跳转到html,同时不会影响单个spa的route,点击任意router-link就会变成正常的localhost地址  
+但是这种方法部署到线上以后,无法在线上跳转域名,无法正常使用,  
+因此需要nginx进行域名跳转,将各个html页面跳转到子域名,在子域名下呈现单个spa.        
 2nginx.  
 好难配置啊,看不懂  
 首先dns打开了所有域名的匹配,不应该每次添加一个子项目就开一个域名  
