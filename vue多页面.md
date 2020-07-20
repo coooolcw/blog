@@ -29,7 +29,7 @@ module.exports = {
 vue-cli使用的webpack中的devserver默认打开index.html,  
 无法和线上一样通过域名跳转,并且无法多端口代理多文件  
 (可以使用多个express另外开启但是这样无法在cli中使用各种vue的服务)  
-因此hack的方法:  
+因此解决方法:  
 ```HTML
 <a href="windows.html">link to windows page</a>
 <a href="corp.html">link to corp page</a>
