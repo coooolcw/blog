@@ -37,13 +37,9 @@ vue-cli使用的webpack中的devserver默认打开index.html,
 这样可以直接跳转到html,同时不会影响单个spa的route,点击任意router-link就会变成正常的localhost地址  
 但是这种方法部署到线上以后,无法在线上跳转域名,无法正常使用,  
 因此需要nginx进行域名跳转,将各个html页面跳转到子域名,在子域名下呈现单个spa.        
-2nginx.  
-好难配置啊,看不懂  
-首先dns打开了所有域名的匹配,不应该每次添加一个子项目就开一个域名  
-然后不知道如何使用nginx获取链接中转向其他html的文件名,  
-需要在获取文件名以后rewrite域名到相应的地址  
-栗子:  
-请求:http://www.nisuwa.com/corp.html  
-需要在nginx中处理后转变为http://corp.nisuwa.com  
-正在研究中
+2nginx.   
+首先在dns打开所有域名的匹配  
+然后在/etc/nginx/sites-enabled文件夹创建nisuwa配置文件  
+
+
 
