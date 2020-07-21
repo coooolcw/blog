@@ -40,7 +40,7 @@ vue-cli使用的webpack中的devserver默认打开index.html,
 2nginx.   
 首先在dns打开所有域名的匹配  
 然后在/etc/nginx/sites-enabled文件夹创建nisuwa配置文件  
-比较麻烦的方法:每个子页面创建一个server,代理子域名,然后在index页面写location跳转  
+方法:每个子页面创建一个server,代理子域名,然后在index页面写location跳转  
 完整配置如下  
 ```
 server {
@@ -78,6 +78,6 @@ server {
 	index corp.html;
 }
 ```
-
+没有找到在一个server中处理所有请求的方法,无法像webpack一样导入,可能需要lua来进行  
 
 
