@@ -40,7 +40,7 @@ vue-cli使用的webpack中的devserver默认打开index.html,
 2nginx.   
 首先在dns打开所有域名的匹配  
 然后在/etc/nginx/sites-enabled文件夹创建nisuwa配置文件  
-方法:每个子页面创建一个server,代理子域名,然后在index页面写location跳转  
+方法:主域名判断是否跳转,子域名自动识别域名寻找index,找不到会自动返回403,怎么设置返回404不清楚,时间关系不深入了  
 完整配置如下  
 ```
 server {
@@ -51,7 +51,8 @@ server {
 	root /web/nisuwa;
 	index index.html;
 
-  #在匹配到html结尾时进行跳转,如果是index.html就不进行跳转
+
+
 	location ~* (\w*).html$ {
 		set $pagename $1;
 		if ($pagename != "index") {
@@ -63,22 +64,16 @@ server {
 server {
 	listen 80;
 
-	server_name windows.nisuwa.com;
+	server_name ~^(\w*).nisuwa.com$;
+
+	set $subdomain $1;
 
 	root /web/nisuwa;
-	index windows.html;
+	index $subdomain.html;
+
+	try_files $uri $uri/ =404;
 }
 
-server {
-	listen 80;
-
-	server_name corp.nisuwa.com;
-
-	root /web/nisuwa;
-	index corp.html;
-}
 ```
-没有找到在一个server中处理所有请求的方法,无法像webpack一样导入,可能需要lua来进行  
-此方面有多种架构和在nginx上的框架(OpenResty,Tengine等)可以使用,时间关系先放弃  
 
 
