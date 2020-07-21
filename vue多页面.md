@@ -79,5 +79,6 @@ server {
 }
 ```
 没有找到在一个server中处理所有请求的方法,无法像webpack一样导入,可能需要lua来进行  
+此方面有多种架构和在nginx上的框架(OpenResty,Tengine等)可以使用,时间关系先放弃  
 
 
