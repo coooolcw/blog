@@ -51,8 +51,6 @@ server {
 	root /web/nisuwa;
 	index index.html;
 
-
-
 	location ~* (\w*).html$ {
 		set $pagename $1;
 		if ($pagename != "index") {
@@ -73,7 +71,6 @@ server {
 
 	try_files $uri $uri/ =404;
 }
-
 ```
 
 
