@@ -88,7 +88,11 @@
 ===  
   修饰符产生的代码会以顺序执行,如self判断失败后后续的修饰符也不会有效  
   事件修饰符中的self实际为:e.target = e.currentTarget才进入下一步  
-  使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。[解释](https://www.oschina.net/question/1785591_2273843?sort=default)  
+  ```
+  使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。  
+  因此，用 v-on:click.prevent.self 会阻止所有的点击，而 v-on:click.self.prevent 只会阻止对元素自身的点击。  
+  ```
+  [解释](https://www.oschina.net/question/1785591_2273843?sort=default)  
 
 
 
