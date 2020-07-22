@@ -87,6 +87,7 @@
 六.事件  
 ===  
   事件修饰符中的self实际为:e.target = e.currentTarget  
+  使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。[解释](https://www.oschina.net/question/1785591_2273843?sort=default)  
 
 
 
