@@ -124,7 +124,8 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   
   二.非根组件(既子组件)中，data必须是一个函数,并且return数据  
   ---
-  原因有多方面[参考爆栈帖子](https://stackoverflow.com/questions/46826709/why-must-vue-component-data-be-a-function)  
+  原因有多方面,[基础解释参考慕课问答](https://www.imooc.com/wenda/detail/453436)  
+  [多方面原因参考爆栈帖子](https://stackoverflow.com/questions/46826709/why-must-vue-component-data-be-a-function)  
   
   
 
