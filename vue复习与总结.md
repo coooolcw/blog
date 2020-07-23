@@ -94,8 +94,11 @@
   ```
   [解释](https://www.oschina.net/question/1785591_2273843?sort=default)  
   
-七.输入绑定
+七.输入绑定  
 ===
+```
+v-model 会忽略所有表单元素的 value、checked、selected attribute 的初始值而总是将 Vue 实例的数据作为数据来源。
+```
 ```
 如果 v-model 表达式的初始值未能匹配任何选项，<select> 元素将被渲染为“未选中”状态。
 在 iOS 中，这会使用户无法选择第一个选项。因为这样的情况下，iOS 不会触发 change 事件。
