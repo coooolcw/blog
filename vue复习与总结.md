@@ -93,8 +93,10 @@
   因此，用 v-on:click.prevent.self 会阻止所有的点击，而 v-on:click.self.prevent 只会阻止对元素自身的点击。  
   ```
   [解释](https://www.oschina.net/question/1785591_2273843?sort=default)  
-
-
+  
+七.输入绑定
+===
+  
 
 N.组件相关
 ===
