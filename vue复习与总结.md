@@ -107,11 +107,6 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 
 八.组件  
 ===
-
-  
-
-N.组件相关
-===
   一.在ul>li,table>tr,select>option之类的嵌套元素组合中,使用子组件需要这样使用is而不是直接使用组件  
   ```Vue.js
   <ul>
@@ -128,8 +123,8 @@ N.组件相关
   
 
 
-  N+1.UI组件库相关  
-  ===  
+N.UI组件库相关  
+===  
   
   element-ui更新频率大幅度降低,并没有随着vue3.0的发布而有起色,可以预见将会和mintui一样消逝  
   
