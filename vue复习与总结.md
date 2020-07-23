@@ -129,7 +129,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   
   三.ref的使用
   ---
-  ref在普通dom结构上会得到DOM节点,在组件上会得到该组件的引用  
+  ref在普通dom结构上会得到DOM节点,在组件上会得到该组件的引用,ref不是响应式的  
   
   
 
