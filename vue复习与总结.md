@@ -134,8 +134,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   ---
   父==>子  
     1.props传值  
-      
-    2.非props特性
+    2.非props特性  
   
   
 
