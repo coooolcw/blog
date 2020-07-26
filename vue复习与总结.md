@@ -107,6 +107,14 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 
 八.组件基础  
 ===
+
+
+
+
+
+
+
+
   一.在ul>li,table>tr,select>option之类的嵌套元素组合中,使用子组件需要这样使用is而不是直接使用组件  
   ---  
   ```Vue.js
@@ -127,6 +135,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   原因有多方面,[基础解释参考慕课问答](https://www.imooc.com/wenda/detail/453436)  
   [多方面原因参考爆栈帖子](https://stackoverflow.com/questions/46826709/why-must-vue-component-data-be-a-function)  
   
+  
   三.ref的使用
   ---
   ref在普通dom结构上会得到DOM节点,在组件上会得到该组件的引用,ref不是响应式的  
@@ -139,6 +148,12 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
     
   五.自定义事件
   ---
+
+
+九.组件高级
+===
+  
+
   
   
   
