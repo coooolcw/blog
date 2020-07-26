@@ -109,50 +109,6 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 ===
 
 
-
-
-
-
-
-
-  一.在ul>li,table>tr,select>option之类的嵌套元素组合中,使用子组件需要这样使用is而不是直接使用组件  
-  ---  
-  ```Vue.js
-  <ul>
-    <li
-      is="todo-item"
-      v-for="(todo, index) in todos"
-      v-bind:key="todo.id"
-      v-bind:title="todo.title"
-    ></li>
-  </ul>
-  ```
-  这样做实现的效果与<todo-item>相同,但是可以避开一些潜在的浏览器解析错误.
-  [参考](https://cn.vuejs.org/v2/guide/components.html#%E8%A7%A3%E6%9E%90-DOM-%E6%A8%A1%E6%9D%BF%E6%97%B6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)  
-  
-  二.非根组件(既子组件)中，data必须是一个函数,并且return数据  
-  ---
-  原因有多方面,[基础解释参考慕课问答](https://www.imooc.com/wenda/detail/453436)  
-  [多方面原因参考爆栈帖子](https://stackoverflow.com/questions/46826709/why-must-vue-component-data-be-a-function)  
-  
-  
-  三.ref的使用
-  ---
-  ref在普通dom结构上会得到DOM节点,在组件上会得到该组件的引用,ref不是响应式的  
-  
-  四.组件传值
-  ---
-  父==>子  
-    1.props传值  
-    2.非props特性  
-    
-  五.自定义事件
-  ---
-  
-  
-  
-
-
 N.UI组件库相关  
 ===  
   
