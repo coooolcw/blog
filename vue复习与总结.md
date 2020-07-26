@@ -105,7 +105,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 因此，更推荐像上面这样提供一个值为空的禁用选项。
 ```
 
-八.组件基础  
+八.组件  
 ===
 
 
@@ -148,12 +148,6 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
     
   五.自定义事件
   ---
-
-
-九.组件高级
-===
-  
-
   
   
   
