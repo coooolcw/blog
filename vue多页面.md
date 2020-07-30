@@ -79,3 +79,5 @@ server {
 在webpack的output.publicPath只能配置所有文件  
 `__webpack_public_path__`可以动态设置,是否可行待研究  
 类似功能的插件[地址](https://github.com/agoldis/webpack-require-from)  
+现在的思路:publicPath设置所有文件前置域名,然后搭配nginx进行html跳转  
+js与css使用www域名,html使用二级域名  
