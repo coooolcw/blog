@@ -114,9 +114,10 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   2.基础组件全局注册使用require.context(),[参考](https://webpack.docschina.org/guides/dependency-management/#requirecontext)  
   不太常用,一般基础组件会打包成插件然后调用vue.use()[插件参考](https://cn.vuejs.org/v2/guide/plugins.html)  
     
-  二.props
+  二.prop
   ---
-  
+  1.传入数据不带v-bind(或者:)全部为字符串,带v-bind为js表达式  
+  2.
 
 
 N.UI组件库相关  
