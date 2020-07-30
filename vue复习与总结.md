@@ -110,6 +110,9 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   
   一.组件注册
   ---
+  1.局部注册的组件在其子组件中不可用  
+  2.基础组件全局注册使用require.context(),[参考](https://webpack.docschina.org/guides/dependency-management/#requirecontext)  
+  不太常用,一般基础组件会打包成插件然后调用vue.use()[插件参考](https://cn.vuejs.org/v2/guide/plugins.html)  
     
   二.props
   ---
