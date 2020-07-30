@@ -75,5 +75,6 @@ server {
 
 三.现有问题为子域名跳转后共用的chunk和css文件由于跨域原因不能共享缓存
 ===
-在webpack的output配置中寻找设置,暂缓  
+在webpack的output.publicPath只能配置所有文件  
+`__webpack_public_path__`可以动态设置,是否可行待研究  
 类似功能的插件[地址](https://github.com/agoldis/webpack-require-from)  
