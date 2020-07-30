@@ -108,9 +108,12 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 八.组件  
 ===
   
-  一.啊
+  一.组件注册
   ---
-  啊
+    
+  二.props
+  ---
+  
 
 
 N.UI组件库相关  
