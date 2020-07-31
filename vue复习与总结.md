@@ -118,7 +118,8 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   ---
   1.传入数据不带v-bind(或者缩略符`:`)全部为字符串,带v-bind为js表达式  
   2.v-bind不带参数传(取代v-bind:prop-name="...")可直接将对象整个传入  
-  3.
+  3.在JavaScript中对象和数组是通过引用传入的,所以对于一个数组或对象类型的prop来说,在子组件中改变变更这个对象或数组本身将会影响到父组件的状态.  
+  4.
 
 
 N.UI组件库相关  
