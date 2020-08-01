@@ -81,3 +81,11 @@ server {
 类似功能的插件[地址](https://github.com/agoldis/webpack-require-from)  
 现在的思路:publicPath设置所有文件前置域名,然后搭配nginx进行html跳转  
 js与css使用www域名,html使用二级域名  
+
+四.scss(或其他css预编译)全局变量引入问题  
+===
+  
+由于分为了多个子页面,webpack无法简单配置引入全局变量,最好在每个项目入口的entry.js文件处引入全局css变量  
+
+
+
