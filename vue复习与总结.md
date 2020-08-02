@@ -126,7 +126,10 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   5.prop类型检查支持自定义构造函数  
   6.非prop的attribute(不常用,主要用于编写基础组件,调整未设置的传入的props的接收位置),使用的时候注意class和style会合并,其他属性会覆盖  
     使用`inheritAttrs: false`禁止外部修改组件的根元素.禁止的同时可以使用实例的`$attrs`属性获取传入的未接收属性,可分配到组件内需要分配的地方  
-    
+  
+  三.自定义事件
+  ---
+  1.
 
 
 
