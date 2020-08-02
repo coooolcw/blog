@@ -133,6 +133,17 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 
 
 
+  四.插槽
+  ---
+    
+  五.动态组件,异步组件  
+  ---
+  
+  六.其他
+  ---
+  
+
+
 N.UI组件库相关  
 ===  
   
