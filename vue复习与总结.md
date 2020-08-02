@@ -130,5 +130,6 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 N.UI组件库相关  
 ===  
   
-  element-ui更新频率大幅度降低,并没有随着vue3.0的发布而有起色,可以预见将会和mintui一样消逝  
+  element-ui更新频率大幅度降低,并没有随着vue3.0的发布而有起色,可以预见将会和mintui一样淡出  
+  现在推荐vuetify,iview(据说bug有点多),
   
