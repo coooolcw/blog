@@ -109,8 +109,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 ===
   
   
-  组件是可复用的vue实例,每个组件都是一个new vue(),但是new的过程在内部完成了,这里实际上是一个重要的知识点,但是没有特别好的参考文章,留坑  
-  **(坑)**
+  组件是可复用的vue实例,每个组件都是一个new vue(),[不是很完善的参考文章](https://segmentfault.com/a/1190000020781076)  
     
   一.组件注册
   ---
