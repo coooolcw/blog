@@ -130,6 +130,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   三.自定义事件
   ---
   1.事件名不存在自动大小写转换,使用kebab-case事件名  
+  2.自定义v-model使用vue对象的model选项  
 
 
 
