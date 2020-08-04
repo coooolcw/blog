@@ -127,10 +127,12 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   6.非prop的attribute(不常用,主要用于编写基础组件,调整未设置的传入的props的接收位置),使用的时候注意class和style会合并,其他属性会覆盖  
     使用`inheritAttrs: false`禁止外部修改组件的根元素.禁止的同时可以使用实例的`$attrs`属性获取传入的未接收属性,可分配到组件内需要分配的地方  
   
-  三.自定义事件
+  三.自定义事件(编写基础组件库常用)  
   ---
   1.事件名不存在自动大小写转换,使用kebab-case事件名  
-  2.自定义v-model使用vue对象的model选项,实际就是把一个event事件的传参和prop的值绑定    
+  2.自定义v-model使用vue对象的model选项,实际就是把一个event事件的传参和prop的值绑定  
+  3.
+  
 
 
 
