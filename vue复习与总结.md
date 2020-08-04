@@ -134,6 +134,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   1.事件名不存在自动大小写转换,使用kebab-case事件名  
   2.自定义v-model使用vue对象的model选项,实际就是把一个event事件的传参和prop的值绑定  
   3.$listeners用于修改在调用组件时绑定在根元素的事件  
+  4.**默认创建的事件都是绑定在vue的监听器中而不是原生js中的,如果有emit也不会监听到原生事件,即使同名(例如click)**  
   
 
 
