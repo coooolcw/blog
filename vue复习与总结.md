@@ -133,7 +133,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   ---
   **vue的事件监听分为两种,原生DOM结构可以监听原生事件,例如click,mouseenter等等  
   而在组件上监听的都是自定义事件,必须在其他地方emit才能触发  
-  也就是说在组件上监听click是监听不到内部的click事件的冒泡和捕获的.  
+  也就是说在组件上监听click是监听不到内部的click事件的冒泡和捕获,无法被触发的.  
   如果想监听子组件内部的click而不在子组件内部的click事件进行emit的话,需要在事件上添加native后缀  
   这样就能变成在组件的根元素上监听原生事件,也就可以进行在冒泡和捕获阶段接收到原生事件**  
   
@@ -141,7 +141,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   1.事件名不存在自动大小写转换,使用kebab-case事件名  
   2.自定义v-model使用vue对象的model选项,实际就是把一个event事件的传参和prop的值绑定  
   3.$listeners用于修改在调用组件时绑定在根元素的事件   
-  4.
+  4.在模板DOM结构上监听原生事件(例如click)不需要emit触发,反之则需要emit触发自定义事件  
   
 
 
