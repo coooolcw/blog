@@ -144,11 +144,9 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   4.在模板DOM结构上监听原生事件(例如click)不需要emit触发,反之则需要emit触发自定义事件  
   5.`.sync`是在父组件上自动绑定'update:myPropName'事件监听的语法糖,在子组件需要触发emit,父组件会自动接收传上来的数据  
   
-
-
-
   四.插槽
   ---
+  
     
   五.动态组件,异步组件  
   ---
