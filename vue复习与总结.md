@@ -143,6 +143,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   3.$listeners用于修改在调用组件时绑定在根元素的事件,可获取除native以外的全部监听事件  
   4.在模板DOM结构上监听原生事件(例如click)不需要emit触发,反之则需要emit触发自定义事件  
   5.`.sync`是在父组件上自动绑定'update:myPropName'事件监听的语法糖,在子组件需要触发emit,父组件会自动接收传上来的数据  
+  **实际使用双向绑定时推荐使用sync,以增加可读性与可维护性**,[参考](https://medium.com/%E4%B8%80%E5%80%8B%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E9%9A%A8%E6%89%8B%E7%AD%86%E8%A8%98/vue-%E4%BD%BF%E7%94%A8-props-async-%E5%90%8C%E6%AD%A5%E7%88%B6%E5%AD%90%E7%B5%84%E5%BB%BA%E4%B9%8B%E9%96%93%E7%9A%84%E5%82%B3%E5%80%BC-f7b1d3007836)  
   
   四.插槽
   ---
