@@ -161,7 +161,8 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   
   六.其他
   ---
-  
+  1.`$root`与`$parent`不要多用  
+  2.
 
 
 N.UI组件库相关  
