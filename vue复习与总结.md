@@ -148,7 +148,8 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   四.插槽
   ---
   1.作用域规则:父级模板里的所有内容都是在父级作用域中编译的;子模板里的所有内容都是在子作用域中编译的.  
-  2.不带name属性的插槽默认名default,包裹用template  
+  2.不带name属性的插槽默认名default  
+  3.v-slot:slot-name只能添加在template上
   
     
   五.动态组件,异步组件  
