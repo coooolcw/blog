@@ -162,7 +162,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   六.其他
   ---
   1.`$root`与`$parent`不要多用  
-  2.
+  2.`$refs`只会在组件渲染完成之后生效,并且它们不是响应式的.优先在M层操作而不是去操作refs  
 
 
 N.UI组件库相关  
