@@ -152,9 +152,11 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   3.v-slot:slot-name只能添加在template上  
   4.插槽prop只在父元素的插槽内容中可用,尽量不要使用独占默认插槽的缩写,使用完整的template插槽语法  
   
-    
   五.动态组件,异步组件  
   ---
+  
+  
+  
   
   六.其他
   ---
