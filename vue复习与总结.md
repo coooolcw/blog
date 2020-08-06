@@ -155,7 +155,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   五.动态组件,异步组件  
   ---
   1.`<keep-alive>`本身不会被渲染,并且可以[控制缓存规则](https://cn.vuejs.org/v2/api/#keep-alive)  
-  2.
+  2.在.vue文件中注册的组件可以使用import进行异步导入,vue-router中也可以(有自动示例)  
   
   
   
