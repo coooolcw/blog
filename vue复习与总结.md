@@ -154,7 +154,8 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   
   五.动态组件,异步组件  
   ---
-  
+  1.<keep-alive>  
+  2.
   
   
   
