@@ -166,7 +166,7 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   3.依赖注入类似于大范围的props属性下发,同样不推荐大规模使用  
   4.Vue 的事件系统不同于浏览器的 EventTarget API.尽管它们工作起来是相似的,  
   但是 $emit,$on,和 $off 并不是 dispatchEvent,addEventListener 和 removeEventListener 的别名  
-  5.组件可以递归和循环调用,但是要注意无限循环  
+  5.组件可以递归和循环调用,但是要注意无限循环,以及相互调用时使用import引入组件  
   
 
 
