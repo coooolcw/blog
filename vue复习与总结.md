@@ -168,6 +168,11 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   但是 $emit,$on,和 $off 并不是 dispatchEvent,addEventListener 和 removeEventListener 的别名  
   5.组件可以递归和循环调用,但是要注意无限循环,以及相互调用时使用import引入组件  
   
+  
+  
+九.过渡
+===  
+  
 
 
 N.UI组件库相关  
