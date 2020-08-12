@@ -175,6 +175,14 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
   
 
 
+N-1.各种API
+===
+1.data可以使用箭头函数
+---
+data如果使用箭头函数,可以将vue实例传递作为参数传递  
+
+
+
 N.UI组件库相关  
 ===  
   
