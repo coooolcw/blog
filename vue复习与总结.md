@@ -173,6 +173,13 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 九.过渡
 ===  
 
+
+十.vuex
+===  
+
+十一.vue-router
+===
+
   
 
 
