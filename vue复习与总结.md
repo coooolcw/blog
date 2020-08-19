@@ -181,6 +181,8 @@ v-model 会忽略所有表单元素的 value、checked、selected attribute 的�
 ---
 [参考官方网站的说明](https://cn.vuejs.org/v2/guide/state-management.html#%E7%AE%80%E5%8D%95%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E8%B5%B7%E6%AD%A5%E4%BD%BF%E7%94%A8)  
   
+实际使用中,可以挂载对象到vue的prototype上  
+也可以new一个vue再挂载到prototype上  
   
 十一.vue-router
 ===
